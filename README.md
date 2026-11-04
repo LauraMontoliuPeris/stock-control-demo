@@ -52,9 +52,9 @@ Flujo guiado en 5 pasos con cronómetro:
 
 | | App original (Ford) | Esta demo |
 |---|---|---|
-| Lenguaje | Python (frontend, backend y API) | HTML, CSS y JavaScript |
-| Datos | 4 bases de datos integradas con Google BigQuery | Datos ficticios generados en el navegador |
-| Gráficos y exportación | — | Chart.js · SheetJS (Excel) |
+| Lenguaje | Python, java, json, css (frontend, backend y API) | HTML, CSS y JavaScript |
+| Datos | 4 bases de datos distintas integradas con Google BigQuery | Datos ficticios generados en el navegador |
+| Gráficos y exportación | python · Excel| Chart.js · SheetJS (Excel) |
 | Persistencia | Base de datos | `localStorage` del navegador |
 
 La demo es un único archivo `index.html` sin dependencias que instalar: basta con abrirlo en el navegador.
