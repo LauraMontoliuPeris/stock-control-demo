@@ -17,15 +17,16 @@ Una aplicación web que guía el conteo paso a paso, calcula automáticamente la
 ## Módulos
 
 ### 1. Planificación
-- Calendario mensual de conteos según una clasificación **ABC**: las piezas A se cuentan cada mes, las B cada dos meses y las C cada tres.
+- Calendario mensual de conteos según un excel de planificación (conteo cíclico: cada 4 meses)
 - Estado de cada pieza (pendiente, contada o con alerta) y detalle al hacer clic.
 
 ### 2. Conteo
 Flujo guiado en 5 pasos con cronómetro:
+- **Información de la pieza:** Toda la información necesaria de la pieza para poder comenzar el conteo
 - **Conteo físico:** almacén, puntos de uso en línea (OP 010…OP 110) y ubicaciones secundarias (AGV, re-embalaje, muestras en revisión…).
 - **Conteo automático:** piezas incluidas en motores en proceso y terminados (motores × piezas por motor).
 - **Comparación con el stock del sistema:** desviación en unidades, en euros y en porcentaje.
-- **Clasificación automática del resultado:**
+- **Clasificación automática del resultado:** Y guardado en la base de datos para alimentar al módulo 1, 3 y 4
 
 | Estado | Regla |
 |---|---|
@@ -44,7 +45,7 @@ Flujo guiado en 5 pasos con cronómetro:
 
 ## Datos de la demo
 - Unas **500 piezas ficticias** de distintas familias (tornillería, tuercas, juntas, cables, etiquetas…), con referencia, ubicación, tipo de estantería, almacén y precio.
-- **4 motores inventados** y 11 operaciones de línea.
+- **4 motores inventados** (app original 15) y 11 operaciones de línea (app original 500).
 - Historial de conteos generado con una semilla aleatoria fija, así que la demo siempre arranca igual. La fecha de la demo está fijada en junio de 2026.
 - Los cambios que hagas (conteos, correcciones…) se guardan en tu navegador. Con el botón **Reiniciar** vuelves al estado inicial.
 
